@@ -5,13 +5,13 @@
 class Maknoon < Formula
   desc "Versatile, ultra-efficient Post-Quantum CLI encryption tool with streaming directory support and memory hygiene."
   homepage "https://github.com/a-khallaf/maknoon"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/a-khallaf/maknoon/releases/download/v1.0.3/maknoon_1.0.3_darwin_amd64.tar.gz"
-      sha256 "0533855151e691331ac3505e1efb1a500d7700f9a92ca436e685cd16582ead17"
+      url "https://github.com/a-khallaf/maknoon/releases/download/v1.0.4/maknoon_1.0.4_darwin_amd64.tar.gz"
+      sha256 "c25153d2ea3c4ca238d65fd7e97de748bbc159cab7ee89495cc17d9646bd93a7"
 
       define_method(:install) do
         bin.install "maknoon"
@@ -19,8 +19,8 @@ class Maknoon < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/a-khallaf/maknoon/releases/download/v1.0.3/maknoon_1.0.3_darwin_arm64.tar.gz"
-      sha256 "39ebbb38ebd92856ca85c86dd4d1aec1cab1fcb3cdb5e642a2407defe3fbf688"
+      url "https://github.com/a-khallaf/maknoon/releases/download/v1.0.4/maknoon_1.0.4_darwin_arm64.tar.gz"
+      sha256 "6adf30a78ebd28b4843661aafb3663e5da66f01f8029cadba6310051f5d9624d"
 
       define_method(:install) do
         bin.install "maknoon"
@@ -31,16 +31,16 @@ class Maknoon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/a-khallaf/maknoon/releases/download/v1.0.3/maknoon_1.0.3_linux_amd64.tar.gz"
-      sha256 "2513c90681948d76771e9a77afd43e2ccb618305835d908fe10094215aa4efe2"
+      url "https://github.com/a-khallaf/maknoon/releases/download/v1.0.4/maknoon_1.0.4_linux_amd64.tar.gz"
+      sha256 "08d267eb546cc56fe887898cb1059e2ebd17676e63035fb7c0f965fad4f44906"
       define_method(:install) do
         bin.install "maknoon"
         man1.install "maknoon.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/a-khallaf/maknoon/releases/download/v1.0.3/maknoon_1.0.3_linux_arm64.tar.gz"
-      sha256 "a6443c69eeada3636dffddcc49d698415fc36dddf4af09f9c1ecb6d74cfd3bfa"
+      url "https://github.com/a-khallaf/maknoon/releases/download/v1.0.4/maknoon_1.0.4_linux_arm64.tar.gz"
+      sha256 "d4c9d56085e2be466601b243b93b1a55cedf30ad29a0728d70b79367f57e058e"
       define_method(:install) do
         bin.install "maknoon"
         man1.install "maknoon.1"
