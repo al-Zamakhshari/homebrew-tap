@@ -11,7 +11,7 @@ class Maknoon < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/a-khallaf/maknoon/releases/download/v1.1.0/maknoon_1.1.0_darwin_amd64.tar.gz"
-      sha256 "7d79d73148566353c488356c74ef174ba941acbb50d6b69411d722b0b672e43f"
+      sha256 "e7cd670a75e35689cf2054fdffe3832bb0b571d289bdaaf543425885672d9070"
 
       define_method(:install) do
         bin.install "maknoon"
@@ -20,7 +20,7 @@ class Maknoon < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/a-khallaf/maknoon/releases/download/v1.1.0/maknoon_1.1.0_darwin_arm64.tar.gz"
-      sha256 "b731458a1d5921e804ef93dfce8af32fbda30ace5329607d2183edcefe92e859"
+      sha256 "ec9da40548e55a053ea56d6620c18894d3a9a100a5da1ff197e26e7c29b5aa22"
 
       define_method(:install) do
         bin.install "maknoon"
@@ -32,7 +32,7 @@ class Maknoon < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/a-khallaf/maknoon/releases/download/v1.1.0/maknoon_1.1.0_linux_amd64.tar.gz"
-      sha256 "0e085b6087443f063759a4612189179a01dfeb4ee9ee06466080ad7f14818e91"
+      sha256 "620eebd35a7b32d3961bac10ac6ed6e5864d7c99dd45849f16d9899cf1975eb1"
       define_method(:install) do
         bin.install "maknoon"
         man1.install "maknoon.1"
@@ -40,7 +40,7 @@ class Maknoon < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/a-khallaf/maknoon/releases/download/v1.1.0/maknoon_1.1.0_linux_arm64.tar.gz"
-      sha256 "e3c3c2a8d463385f1590a7b5d08a77ad29c49ee6b4cc83115e32dfda86e087ee"
+      sha256 "f1744dda339c7c99f826f951a1fb88b5160603e3d27af857a892ea16691ac492"
       define_method(:install) do
         bin.install "maknoon"
         man1.install "maknoon.1"
